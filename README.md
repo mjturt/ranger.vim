@@ -1,6 +1,18 @@
 Ranger.vim
 ==========
 
+Personal fork of original [ranger.vim](https://github.com/francoiscabrol/ranger.vim). Just added commands that open files in new splits with ranger. Deleted default keybindings too.
+
+You should jor example add to .vimrc:
+```
+map <leader>rr :Ranger<CR>
+map <leader>rv :RangerCurrentFileNewVSplit<CR>
+map <leader>rs :RangerCurrentFileNewSplit<CR>
+```
+
+---
+
+
 [Ranger](http://ranger.nongnu.org/) integration in vim and neovim
 
 ![Demo](./ranger.gif)
@@ -43,6 +55,10 @@ RangerNewTab
 RangerCurrentFileNewTab
 RangerCurrentDirectoryNewTab
 RangerWorkingDirectoryNewTab
+
+// New commands
+RangerCurrentFileNewVSplit
+RangerCurrentFileNewSplit
 ```
 
 The old way to make vim open the selected file in a new tab was to add

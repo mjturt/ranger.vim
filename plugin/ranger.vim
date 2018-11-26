@@ -108,7 +108,7 @@ command! RangerCurrentDirectoryNewTab call OpenRangerIn("%:p:h", 'tabedit ')
 command! RangerWorkingDirectoryNewTab call OpenRangerIn(".", 'tabedit ')
 command! RangerNewTab RangerCurrentDirectoryNewTab
 
-" Splits
+" Open files in new splits
 command! RangerCurrentFileNewSplit call OpenRangerIn("%", 'split ')
 command! RangerCurrentFileNewVSplit call OpenRangerIn("%", 'vsplit ')
 
@@ -135,8 +135,3 @@ if exists('g:ranger_replace_netrw') && g:ranger_replace_netrw
     autocmd BufEnter * if isdirectory(expand("%")) | call OpenRangerOnVimLoadDir("%") | endif
   augroup END
 endif
-
-if !exists('g:ranger_map_keys') || g:ranger_map_keys
-  map <leader>rr :Ranger<CR>
-endif
-
