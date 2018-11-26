@@ -22,7 +22,7 @@ Installation
 
 Install it with your favorite plugin manager. Example with vim-plug:
 
-        Plug 'francoiscabrol/ranger.vim'
+        Plug 'mjturt/ranger.vim'
 
 If you use neovim, you have to add the dependency to the plugin bclose.vim:
 
